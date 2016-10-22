@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<title>这是一个问题?</title>
+<link rel="stylesheet" type="text/css" href="../css/QuestionPage.css">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+/*回答动作与回答列表的切换*/
+        $(function () {
+            $(".answer").click(function () { 
+                $("#answer").toggle();
+				//$("#answers").toggle();
+				$("#comment").css("display","none");
+            })
+			$("#answer .cancel").click(function(){
+				$("#answer").css("display","none");
+				//$("#answers").css("display","block");
+				$("#comment").css("display","none");
+				})
+        })
+		/*评论动作与回答列表的切换*/
+        $(function () {
+            $(".comment").click(function () { 
+                $("#comment").toggle();
+				//$("#answers").toggle();
+				$("#answer").css("display","none");
+            })
+			$("#comment .cancel").click(function(){
+				$("#comment").css("display","none");
+				//$("#answers").css("display","block");
+				$("#answer").css("display","none");
+				})
+        })
+</script>
+</head>
+
+<body>
+ <!-- start  nav -->
+    <div class="nav">
+        <div class="container">
+            <a class="logo" href="HomePage.html">LilyAsk</a>
+            <ul>
+                <li ><a href="HomePage.html">ANSWER</a></li>
+                <li ><a href="HomePage.html">USER</a> </li>
+            </ul>
+        </div>
+    </div>
+<!-- end nav -->
+
+<!-- 以下为主体页面的实现 -->
+<div class="main">
+  <!-- 问题框 question 的实现 -->
+  <article id="question">
+    <header>
+      <h1>我是问题我是问题我是问题?</h1>
+    </header>
+    <p>我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述。</p>
+    <footer>
+      <span>最后编辑于 2000 - 00 - 00  00：00</span>
+      <a class="comment">评论</a>
+      <a class="answer">回答</a>
+    </footer>
+  </article>
+  <hr>
+  <!-- 回答 answer 的实现 -->
+  <article id="answer">
+    <form name="answer" action="" method="post">
+      <caption>
+      你的回答
+      </caption>
+      <textarea class="answer-content" name="answer-content">在这里写下你的回答</textarea>
+      <input class="cancel btn" type="button" value="返回"/>
+      <input class="submit btn" type="submit" value="提交" />
+    </form>
+    <hr>
+  </article>
+  
+  <!-- 评论 comment 的实现-->
+  <article id="comment">
+    <form name="comment" action="" method="post">
+      <caption>
+      你的评论
+      </caption>
+      <textarea class="comment-content" name="comment-content">在这里写下你的评论</textarea>
+      <input class="cancel btn" type="button" value="返回" />
+      <input class="submit btn" type="submit" value="提交" />
+    </form>
+    <hr>
+  </article>
+  
+  <!-- 回答框 answers 的实现 -->
+  <article id="answers" style="clear:both">
+    <!-- 回答信息 answers-info （回答个数、排序按钮）的实现-->
+    <div id="answers-info">
+      <span>2333个回答</span>
+      <select>
+        <option value="sort">按时间降序</option>
+        <option value="sort">按赞同数降序</option>
+      </select>
+    </div>
+    <hr>
+    <div id="answers-content">
+      <!-- 赞同/反对 按钮-->
+      <div id="vote">
+        <a><img src="../image/for-f06.png" alt=""/></a>
+        <span>360</span>
+        <a><img src="../image/against-f06.png" alt=""/></a>
+      </div>
+      
+      <!-- 回答文本列表 -->
+      <div id="answers-text">
+        <div id="author-info">
+          <img src="../image/UserIcon.png" alt="头像"/>
+           <span> <a href="#">用户名</a>
+            ,用户描述用户描述用户描述用户描述。</span>          
+          <footer>
+            <span>最后编辑于 2000 - 00 - 00  00：00</span>
+          </footer>
+        </div>
+        <div>
+          <p>我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答。</p>
+          <p>我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答我是回答。</p>
+        </div>
+        <footer>
+          <span>发布于 2000 - 00 - 00  00：00</span>
+          <a href="#">评论</a>
+          <a href="#">分享</a>
+        </footer>
+      </div>
+      <hr>
+    </div>
+  </article>
+</div>
+</body>
+</html>

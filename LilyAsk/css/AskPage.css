@@ -1,0 +1,71 @@
+@charset "utf-8";
+body {
+	background: #eee;
+}
+.main {
+	width: 960px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+}
+
+textarea {
+	resize: none;
+	font: inherit;
+	margin: 0;
+	overflow: auto;
+	border-radius: 3px;
+}
+/*按钮样式*/
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+.btn {
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 6px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none!important;
+	color: #fff;
+	background-color: #f06;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+	transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+}
+.btn:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/* 返回&提交 按钮*/
+.cancel, .submit {
+	margin: 10px 0;
+}
+.cancel {
+	margin-left: 835px;
+}
+/**/
+#ask .ask-icon {
+	width: 120px;
+	margin-top: 10px;
+}
+#question, #question-content {
+	width: 960px;
+	border: 1px solid black;
+}
+#question {
+	height: 36px;
+}
+#question-content {
+	height: 200px;
+}

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<title>我要提问</title>
+<link rel="stylesheet" type="text/css" href="../css/AskPage.css">
+</head>
+
+<body>
+ <!-- start  nav -->
+    <div class="nav">
+        <div class="container">
+            <a class="logo" href="HomePage.html">LilyAsk</a>
+            <ul>
+                <li ><a href="HomePage.html">ANSWER</a></li>
+                <li ><a href="HomePage.html">USER</a> </li>
+            </ul>
+        </div>
+    </div>
+<!-- end nav -->
+
+
+<!-- 以下为主体页面的实现。背景颜色待统一 -->
+<div class="main">
+<!-- 提问框 ask 的实现 -->
+<div id="ask">
+  <img class="ask-icon" src="../image/QuestionIcon.png" alt="ask" />
+  <form name="ask" action="" method="post">
+    <h2>问题</h2>
+    <textarea id="question" name="question"></textarea>
+    <h2>问题描述</h2>
+    <textarea id="question-content" name="question-content"></textarea>
+      <input class="cancel btn" type="button" value="取消"/>
+      <input class="submit btn" type="submit" value="提交" />
+  </form>
+</div>
+</div>
+</body>
+</html>

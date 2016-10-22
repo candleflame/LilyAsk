@@ -1,0 +1,167 @@
+@charset "utf-8";
+body {
+	background: #eee;
+}
+.main {
+	width: 960px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+}
+
+#answer, #comment {
+	display: none;
+}
+footer span {
+	font-size: 14px;
+	color: #808080;
+}
+a {
+	text-decoration: none;
+	color: #808080;
+	cursor: pointer;
+}
+a:hover {
+	color: #f33;
+}
+footer a {
+	float: right;
+	margin-left: 10px;
+}
+h1 {
+	line-height: 1.5em;
+}
+p {
+	font-size: 16px;
+	line-height: 2em;
+}
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 5px 0;
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+textarea {
+	resize: none;
+	font: inherit;
+	margin: 0;
+	overflow: auto;
+	color: #ccc;
+	border-radius: 3px;
+}
+caption {
+	font-weight: 200;
+}
+/*按钮样式*/
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+.btn {
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 6px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none!important;
+	color: #fff;
+	background-color: #f06;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+	transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+}
+.btn:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*--问题框--*/
+
+/* 返回&提交*/
+.cancel, .submit {
+	margin: 10px 0;
+}
+.cancel {
+	margin-left: 835px;
+}
+/*--回答--*/
+#answer .answer-icon {
+	width: 120px;
+	margin-top: 10px;
+}
+.answer-content {
+	width: 960px;
+	height: 200px;
+	border: 1px solid silver;
+	margin-top: 10px;
+}
+/*--评论--*/
+.comment-content {
+	width: 960px;
+	height: 50px;
+	border: 1px solid silver;
+	margin-top: 10px;
+}
+/*--回答框 answers--*/
+
+/* 回答信息 */
+#answers-info {
+	padding: 10px 0;
+}
+#answers-info span {
+	font-size: 20px;
+	font-weight: bold;
+}
+select {
+	font: inherit;
+	color: #808080;
+	border: 1px solid transparent;
+	float: right;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url("../image/arrow-333.png") no-repeat scroll right center transparent;
+	padding-right: 22px;
+	cursor: pointer;
+}
+/* 回答内容 */
+#answers-content hr {
+	clear: both;
+}
+/*赞同/反对 vote*/
+#vote {
+	float: left;
+	width: 50px;
+	margin-top: 0px;
+}
+#vote * {
+	display: block;
+}
+/*回答文本列表*/
+#answers-text {
+	float: right;
+	width: 910px;
+}
+/*作者信息*/
+#author-info {
+	position: relative;
+}
+#author-info img {
+	position: absolute;
+	width: 60px;
+}
+#author-info footer {
+	margin-top: 10px;
+}
+#author-info a, #author-info footer {
+	margin-left: 70px;
+}
