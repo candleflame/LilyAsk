@@ -69,7 +69,7 @@
       <caption>
       你的回答
       </caption>
-      <textarea class="answer-content" name="answer-content">在这里写下你的回答</textarea>
+      <textarea class="answer-content" name="answer-content" placeholder="在这里写下你的回答"></textarea>
       <input class="cancel btn" type="button" value="返回"/>
       <input class="submit btn" type="submit" value="提交" />
     </form>
@@ -82,7 +82,7 @@
       <caption>
       你的评论
       </caption>
-      <textarea class="comment-content" name="comment-content">在这里写下你的评论</textarea>
+      <textarea class="comment-content" name="comment-content" placeholder="在这里写下你的评论"></textarea>
       <input class="cancel btn" type="button" value="返回" />
       <input class="submit btn" type="submit" value="提交" />
     </form>
@@ -94,10 +94,10 @@
     <!-- 回答信息 answers-info （回答个数、排序按钮）的实现-->
     <div id="answers-info">
       <span>2333个回答</span>
-      <select>
-        <option value="sort">按时间降序</option>
-        <option value="sort">按赞同数降序</option>
-      </select>
+      <div class="sort">
+        <span class="sort-vote">按赞同数降序</span>
+        <span class="sort-time">按时间降序</span>
+      </div>
     </div>
     <hr>
     <div id="answers-content">

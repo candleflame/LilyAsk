@@ -7,7 +7,6 @@ body {
 	margin: 0 auto;
 	font-family: "微软雅黑";
 }
-
 #answer, #comment {
 	display: none;
 }
@@ -47,11 +46,7 @@ textarea {
 	font: inherit;
 	margin: 0;
 	overflow: auto;
-	color: #ccc;
 	border-radius: 3px;
-}
-caption {
-	font-weight: 200;
 }
 /*按钮样式*/
 button::-moz-focus-inner, input::-moz-focus-inner {
@@ -83,7 +78,6 @@ padding:0
 .btn:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
 /*--问题框--*/
 
 /* 返回&提交*/
@@ -121,17 +115,29 @@ padding:0
 	font-size: 20px;
 	font-weight: bold;
 }
-select {
+.sort {
 	font: inherit;
 	color: #808080;
-	border: 1px solid transparent;
 	float: right;
 	appearance: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background: url("../image/arrow-333.png") no-repeat scroll right center transparent;
-	padding-right: 22px;
 	cursor: pointer;
+}
+.sort-vote {
+	background: url("../image/arrow-333.png") no-repeat scroll right center transparent;
+	padding-right: 24px;
+}
+.sort-time {
+	display: none;
+}
+.sort:hover span {
+	display: block;
+}
+.sort:hover {
+	border: 1px solid #ccc;
+	padding:2px;
+	z-index:1;
 }
 /* 回答内容 */
 #answers-content hr {
