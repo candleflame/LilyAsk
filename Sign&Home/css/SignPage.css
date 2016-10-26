@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI";
+    text-decoration: none;
+}
+
+body {
+    background: url(../image/sign_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.sign {
+    width: 50ch;
+    height: 100vh;
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-img {
+    margin: 2vh auto 0;
+    width: 300px;
+}
+
+.navs-slider {
+    width: 240px;
+    margin:auto;
+    margin-top: 2vh;
+    display: block;
+    position: relative;
+    left:0;
+    top:0;
+}
+
+.tag {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tag li{
+    text-align: center;
+    float: left;
+    display: inline;
+}
+
+.tag li a{
+    font-size: 200%;
+    color: rgb(100, 107, 119);
+}
+
+.tag li a:hover, .tag li a:active{
+    color: rgb(242,109,27);
+}
+
+.slider-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 64px;
+    background-color: rgb(242,109,27);
+    transition: all 0.3s;
+}
+
+.group-inputs {
+    position: relative;
+}
+
+.input-wrapper input {
+    margin:auto;
+    width:280px;
+    height:26px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(100, 107, 119);
+    margin-top: 30px;
+    margin-bottom: 26px;
+    color: rgb(100, 107, 119);
+    outline:none;
+}
+
+.button-wrapper {
+    width: 280px;
+    height: 100px;
+    background: rgb(242,109,27);
+    border: 1px solid rgb(242,109,27);
+    margin-top: 30px;
+    font-size: 24px;
+    color: rgb(100, 107, 119);
+    opacity: 0.85;
+}
+
+.button-wrapper:hover {
+    opacity: 1;
+}
+
+
